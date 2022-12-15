@@ -1,0 +1,32 @@
+@import '../../assets/styles/variables' ;
+
+
+.btn{
+    margin-top: 24px;
+    padding: 25px 33px;
+    background: $VeryDarkBlue;
+    color: $White;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: background .3s linear;
+    cursor: pointer;
+    z-index: 2;
+
+    &:hover{
+        background: $DarkGrey;  
+    }
+
+    &:active{
+        background: $LightGrey;  
+    }
+
+    &__text{
+        margin-right: 24px;
+    }
+
+    &__arrowIco{
+        vertical-align: middle;
+    }
+
+}

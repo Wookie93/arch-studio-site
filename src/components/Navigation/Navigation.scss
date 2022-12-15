@@ -1,0 +1,55 @@
+@import '../../assets/styles/variables' ;
+
+.nav{
+
+    .menu-list{
+        position: absolute;
+        top: 96px;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        width: 343px;
+        padding: 48px 42px;
+        background: #EEEFF4;
+        z-index: 99;
+        transform: scaleX(0);
+        transition: transform .3s linear;
+    
+        @media screen and (min-width: $media-tablet){
+            position: unset;
+            flex-direction: row;
+            background: none;
+            transition: none;
+            transform: none;
+            justify-content: space-between;
+            padding: 0;
+        }
+
+
+        &__link{
+            font-weight: 700;
+
+            @media screen and (min-width: $media-desktop){
+                transition: transform .8s linear;
+
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    
+        &.open{
+            transform: scaleX(1);
+        }
+    }
+    
+    
+    .burger-ico{
+        background: transparent;
+        border: none;
+    
+        @media screen and (min-width: $media-tablet){
+            display: none;
+        }
+    }
+}

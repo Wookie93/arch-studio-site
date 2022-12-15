@@ -1,0 +1,27 @@
+@import '../../assets/styles/variables' ;
+
+
+.header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 96px;
+    padding: 0 32px;
+
+    @media screen and (min-width: $media-tablet){
+        max-width: 573px;
+        margin: auto;
+        height: 152px;
+    }
+
+    @media screen and (min-width: $media-desktop){
+        max-width: 1110px;
+        justify-content: flex-start;
+        padding: 0;
+
+        .logo{
+            margin-right: 100px;
+        }
+    }
+}

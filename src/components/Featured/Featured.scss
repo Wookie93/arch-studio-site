@@ -1,0 +1,85 @@
+@import '../../assets/styles/variables' ;
+
+
+.featured{
+    position: relative;
+
+    &__wrap,
+    &__box{
+        display: grid;
+    }
+
+    &__wrap{
+        row-gap: 24px;
+        @media screen and (min-width: $media-tablet){
+            margin-top: 85px;
+        }
+        @media screen and (min-width: $media-desktop){
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 30px;
+        }
+    }
+
+    &__text-wrap{
+
+        &::before{
+            content: '';
+            position: absolute;
+            display: block;
+            opacity: 0.5;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%);
+            z-index: 1;
+        }
+        h3,
+        p{
+            color: $White;
+        }
+    }
+
+    &__inner-text-wrap,
+    &__counter{
+        z-index: 2;
+    }
+
+    &__counter{
+        @media screen and (min-width: $media-tablet){
+            position: absolute;
+            right: 16px;
+            top: 30px;
+            font-size: 250px;
+            font-weight: 700;
+            opacity: .5;
+            color: $White;
+        }
+    }
+
+    &__inner-text-wrap{
+        align-self: end;
+    justify-self: left;
+    margin: 0 0 24px 24px;
+    @media screen and (min-width: $media-tablet){
+        margin: 0 0 40px 40px;  
+    }
+    }
+
+    &__counter{
+        display: none;
+        @media screen and (min-width: $media-tablet){
+            display: block;
+        }
+    }
+
+    .btn{
+        width: 100%;
+        @media screen and (min-width: $media-tablet){
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: unset;
+            margin: 0;
+        }
+    }
+
+}

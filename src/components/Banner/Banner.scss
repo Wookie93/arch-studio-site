@@ -1,0 +1,28 @@
+@import '../../assets/styles/variables' ;
+
+.banner{
+    display: grid;
+    width: 100vw;
+    margin-left: -32px;
+
+    @media screen and (min-width: $media-tablet){
+        width: auto;
+        margin-left: 0;
+    }
+
+    .mask{
+        position: relative;
+        grid-area: 1/1;
+        background: #000000;
+        opacity: 0.5;
+    }
+
+    .grid-for-bcg{
+        padding: 0 32px;
+
+        h2{
+            width: 70%;
+            color: $White;
+        }
+    }
+}

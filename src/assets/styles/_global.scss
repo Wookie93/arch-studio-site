@@ -1,0 +1,102 @@
+@import './variables.scss';
+
+html{
+    font-size: $base;
+    font-family: 'League Spartan', sans-serif;
+}
+
+*, 
+*:before, 
+*:after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    padding: 0 32px;
+    @media screen and (min-width: $media-tablet){
+        padding: 0;
+        max-width: 573px;
+        margin: auto;
+    }
+
+    @media screen and (min-width: $media-desktop){
+        max-width: 1110px;
+    }
+}
+
+h1,
+h2,
+h3{
+    font-weight: 700;
+    color: $VeryDarkBlue;
+}
+
+h1{
+    font-weight: 700;
+    font-size: $headingL;
+    line-height: 80px;
+    letter-spacing: -2px;  
+}
+
+h2{
+    font-size: $headingMmobile;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: -2px;
+
+    @media screen and (min-width: $media-tablet){
+        font-size: $headingM;
+        line-height: 64px;
+    }
+
+}
+
+h3{
+    font-weight: 700;
+    font-size: $headingS;
+    line-height: 40px;
+}
+
+p,
+a,
+span
+ul,
+li{
+    font-size: 1rem;
+    color: $DarkGrey;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+section{
+    margin-bottom: 72px;
+}
+
+.only-desktop{
+    display: none;
+
+    @media screen and (min-width: $media-desktop){
+        display: block ;
+    }
+}
+
+.bcg-img{
+    grid-area: 1/1;
+}
+
+.grid-for-bcg{
+    position: relative;
+    display: grid;
+    grid-area: 1/1;
+    place-items: center;
+}
+
+

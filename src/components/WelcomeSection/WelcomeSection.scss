@@ -1,0 +1,78 @@
+@import '../../assets/styles/variables' ;
+
+.welcome{
+    position: relative;
+    margin-top: 72px;
+
+    @media screen and (min-width: $media-tablet){
+        padding-top: 160px;
+    }
+
+    @media screen and (min-width: $media-desktop){
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &::before{
+        content: '';
+        display: block;
+        width: 65px;
+        height: 1px;
+        background-color: $LightGrey;
+        margin-bottom: 68px;
+
+        @media screen and (min-width:700px){
+            display: none;
+        }
+    }
+
+    &__title,
+    p{
+        margin-bottom: 36px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    &__title{
+        @media screen and (min-width: $media-tablet){
+            width: 70%;
+        }
+    }
+
+    &__text-wrap{
+        @media screen and (min-width: $media-desktop){
+            margin: 0 125px 0 190px;
+        }
+    }
+
+    .gatsby-image-wrapper{
+        @media screen and (min-width: $media-desktop){
+            flex-shrink: 0;
+        }
+    }
+
+    .shadow-title{
+        display: none;
+    
+        @media screen and (min-width: $media-tablet){
+            position: absolute;
+            top: 10px;
+            display: block;
+            font-size: $headingXLmobile;
+            font-weight: 700;
+            letter-spacing: 5px;
+            line-height: 200px;
+            color: $VeryLightGrey;
+            margin: 0;
+        }
+    
+        @media screen and (min-width: $media-desktop){
+            font-size: $headingXL;
+            top: 70px;
+            z-index: 50;
+        }
+    }
+
+}

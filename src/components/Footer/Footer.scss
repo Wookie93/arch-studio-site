@@ -1,0 +1,107 @@
+@import '../../assets/styles/variables' ;
+
+.footer{
+    @media screen and (min-width: $media-tablet){
+        height: 120px;
+    }
+    @media screen and (min-width: $media-desktop){
+        max-width: 1110px;
+        height: 200px;
+        margin: auto;
+    }
+
+    &__innerwrap,
+    &__linkswrap,
+    &__links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media screen and (min-width: $media-tablet){
+            flex-direction: row;
+        }
+    }
+
+    &__innerwrap,
+    &__linkswrap{
+        width: 100%;
+    }
+
+    &__innerwrap{
+        @media screen and (min-width: $media-desktop){
+            .logo{
+                max-height: unset;
+                flex-shrink: 0;
+    
+                img{
+                    width: 200px;
+                }
+            }
+        }
+    }
+
+    &__linkswrap{
+        position: relative;
+        padding-bottom: 48px;
+        padding-top: 32px;
+        background-color: $VeryLightGrey;
+
+        @media screen and (min-width: $media-tablet){
+            padding: 0 0 0 40px;
+            height: 120px;
+        }
+        @media screen and (min-width: $media-desktop){
+            padding: 0 0 0 85px;
+            height: 200px;
+        }
+
+        &::before{
+            content: '';
+            display: block;
+            position: absolute;
+            top: -64px;
+            width: 100%;
+            height: 64px;
+            background-color: $VeryLightGrey;
+            z-index: 1;
+            @media screen and (min-width: $media-tablet){
+                top: 0;
+                right: 0;
+                width: 175px;
+                height: 100%;
+                background-color: $White;
+            }
+        }
+
+        .btn{
+            @media screen and (min-width: $media-tablet){
+                margin-top: 0;
+            }
+        }
+    }
+
+    &__links{
+        justify-content: space-between;
+        height: 139px;
+
+        @media screen and (min-width: $media-tablet){
+            flex-grow: 1;
+            height: 100%;
+            margin-right: 40px;
+        }
+        @media screen and (min-width: $media-desktop){
+            justify-content: flex-start;
+        }
+
+        li{
+            font-weight: 700;
+            color: $MediumGrey;
+            @media screen and (min-width: $media-desktop){
+                margin-right: 61px;
+
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
