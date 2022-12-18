@@ -1,16 +1,13 @@
 import * as React from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
 import Banner from '../components/Banner/Banner.js';
 import Featured from '../components/Featured/Featured.js';
 import WelcomeSection from '../components/WelcomeSection/WelcomeSection.js';
+import SliderComponent from '../components/Slider/Slider.js';
 
 const IndexPage = () => {
   return (
     <>
-      <StaticImage
-        src="../assets/images/home/mobile/image-hero-paramour.jpg"
-        alt="image-hero-paramour"
-      />
+      <SliderComponent />
       <main>
         <WelcomeSection />
         <Banner />

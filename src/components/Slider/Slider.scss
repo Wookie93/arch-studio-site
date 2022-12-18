@@ -1,0 +1,107 @@
+@import '../../assets/styles/variables' ;
+
+.slider-wrap{
+    position: relative;
+    @media screen and (min-width: $media-tablet){
+        max-width: 573px;
+        margin: auto;
+    }
+    @media screen and (min-width: $media-desktop){
+        max-width: 1110px;
+    }
+}
+
+.slick-slider{
+    overflow: hidden;
+    .slick-list{
+        .slick-track{
+            display: flex;
+
+            .gatsby-image-wrapper{
+                height: 560px;
+
+                @media screen and (min-width: $media-tablet){
+                    height: 720px;
+                }  
+            }
+        }
+    }
+
+    .slide{
+        position: relative;
+        
+        &__content{
+            position: absolute;
+            top: 50%;
+            left: 32px;
+            right: 32px;
+            transform: translateY(-50%);
+            z-index: 10;
+
+            h1,
+            p{
+                color: $White;
+            }
+            h1{
+                margin-bottom: 20px;
+            }
+            p{
+                line-height: 24px;
+            }
+            .btn{
+                margin-top: 90px;
+            }
+        }
+    }
+
+    .slick-dots{
+        display: flex !important;
+
+        @media screen and (min-width: $media-desktop){
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        @media screen and (min-width: 1285px){
+            left: -80px;
+        }
+
+        li{
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background-color: $White;
+
+            @media screen and (min-width: $media-tablet){
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+            }
+            @media screen and (min-width: $media-desktop){
+                width: 80px;
+                height: 80px;
+                line-height: 80px;
+            }
+
+            &.slick-active{
+                background-color: $VeryDarkBlue;
+
+                button{
+                    color: $White;
+                }
+            }
+
+            button{
+                background: none;
+                border: none;
+                color: $DarkGrey;
+                font-size: .8rem;
+                font-weight: 700;
+                @media screen and (min-width: $media-tablet){
+                    font-size: 1rem;  
+                }
+            }
+        }
+    }
+}

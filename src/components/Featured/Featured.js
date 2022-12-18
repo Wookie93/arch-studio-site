@@ -9,7 +9,7 @@ const Featured = () => (
     <div className="featured__wrap">
       <div className="featured__box">
         <StaticImage
-          src="../assets/images/portfolio/mobile/image-del-sol.jpg"
+          src="../../assets/images/portfolio/mobile/image-del-sol.png"
           alt=""
           class="bcg-img"
         />
@@ -24,7 +24,7 @@ const Featured = () => (
 
       <div className="featured__box">
         <StaticImage
-          src="../assets/images/portfolio/mobile/image-228b.jpg"
+          src="../../assets/images/portfolio/mobile/image-228b.png"
           alt=""
           class="bcg-img"
         />
@@ -39,7 +39,7 @@ const Featured = () => (
 
       <div className="featured__box">
         <StaticImage
-          src="../assets/images/portfolio/mobile/image-prototype.jpg"
+          src="../../assets/images/portfolio/mobile/image-prototype.png"
           alt=""
           class="bcg-img"
         />
