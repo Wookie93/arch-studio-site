@@ -33,7 +33,7 @@ const Banner = () => {
       }
     }
   `);
-  console.log(data);
+
   const images = withArtDirection(getImage(data.imgDesktop), [
     {
       media: '(max-width: 600px)',

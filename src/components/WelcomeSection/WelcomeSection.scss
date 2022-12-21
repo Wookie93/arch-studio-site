@@ -55,28 +55,4 @@
             flex-shrink: 0;
         }
     }
-
-    .shadow-title{
-        display: none;
-    
-        @media screen and (min-width: $media-tablet){
-            position: absolute;
-            top: 10px;
-            display: block;
-            font-size: $headingXLmobile;
-            font-weight: 700;
-            letter-spacing: 5px;
-            line-height: 200px;
-            color: $VeryLightGrey;
-            margin: 0;
-        }
-    
-        @media screen and (min-width: $media-desktop){
-            font-size: $headingXL;
-            top: 72px;
-            letter-spacing: -5px;
-            z-index: 50;
-        }
-    }
-
 }

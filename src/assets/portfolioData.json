@@ -1,0 +1,88 @@
+[
+  {
+    "name": "Seraph Station",
+    "date": "September 2019",
+    "imgDesktop": "image-seraph-desktop",
+    "imgTablet": "image-seraph-tablet",
+    "imgMobile": "image-seraph-mobile"
+  },
+  {
+    "name": "Eebox Building",
+    "date": "August 2017",
+    "imgDesktop": "image-eebox-desktop",
+    "imgTablet": "image-eebox-tablet",
+    "imgMobile": "image-eebox-mobile"
+  },
+  {
+    "name": "Federal II Tower",
+    "date": "March 2017",
+    "imgDesktop": "image-federal-desktop",
+    "imgTablet": "image-federal-tablet",
+    "imgMobile": "image-federal-mobile"
+  },
+  {
+    "name": "Project Del Sol",
+    "date": "January 2016",
+    "imgDesktop": "image-del-sol-desktop",
+    "imgTablet": "image-del-sol-tablet",
+    "imgMobile": "image-del-sol-mobile"
+  },
+  {
+    "name": "Le Prototype",
+    "date": "October 2015",
+    "imgDesktop": "image-prototype-desktop",
+    "imgTablet": "image-prototype-tablet",
+    "imgMobile": "image-prototype-mobile"
+  },
+  {
+    "name": "228B Tower",
+    "date": "April 2015",
+    "imgDesktop": "image-228b-desktop",
+    "imgTablet": "image-228b-tablet",
+    "imgMobile": "image-228b-mobile"
+  },
+  {
+    "name": "Grand Edelweiss Hotel",
+    "date": "December 2013",
+    "imgDesktop": "image-edelweiss-desktop",
+    "imgTablet": "image-edelweiss-tablet",
+    "imgMobile": "image-edelweiss-mobile"
+  },
+  {
+    "name": "Netcry Tower",
+    "date": "August 2012",
+    "imgDesktop": "image-netcry-desktop",
+    "imgTablet": "image-netcry-tablet",
+    "imgMobile": "image-netcry-mobile"
+  },
+  {
+    "name": "Hypers",
+    "date": "January 2012",
+    "imgDesktop": "image-hypers-desktop",
+    "imgTablet": "image-hypers-tablet",
+    "imgMobile": "image-hypers-mobile"
+  },
+  {
+    "name": "SXIV Tower",
+    "date": "March 2011",
+    "imgDesktop": "image-sxiv-desktop",
+    "imgTablet": "image-sxiv-tablet",
+    "imgMobile": "image-sxiv-mobile"
+  },
+  {
+    "name": "Trinity Bank Tower",
+    "date": "September 2010",
+    "imgDesktop": "image-trinity-desktop",
+    "imgTablet": "image-trinity-tablet",
+    "imgMobile": "image-trinity-mobile"
+  },
+  {
+    "name": "Project Paramour",
+    "date": "February 2008",
+    "imgDesktop": "image-paramour-desktop",
+    "imgTablet": "image-paramour-tablet",
+    "imgMobile": "image-paramour-mobile"
+  }
+]
+ 
+

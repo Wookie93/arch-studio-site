@@ -1,7 +1,8 @@
 import * as React from 'react';
+import PortfolioCardList from '../components/PortfolioCardList/PortfolioCardList.js';
 
 const PortfolioPage = () => {
-  return <div>PortfolioPage</div>;
+  return <PortfolioCardList />;
 };
 
 export default PortfolioPage;

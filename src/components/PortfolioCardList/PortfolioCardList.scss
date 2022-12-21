@@ -1,0 +1,17 @@
+@import '../../assets/styles/variables' ;
+
+.card-list{
+    display: grid;
+    row-gap: 24px;
+    grid-template-columns: 1fr;
+    margin-bottom: 72px;
+
+    @media screen and (min-width: $media-desktop){
+        display: grid;
+        max-width: 1100px;
+        margin: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        margin-bottom: 120px;
+    }
+}
