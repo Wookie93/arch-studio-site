@@ -1,1 +1,54 @@
 @import '../../assets/styles/variables' ;
+
+.heritage{
+
+    @media screen and (min-width: $media-desktop){
+        display: flex;
+    }
+
+
+    &__text-wrap{
+        &::before{
+                content: '';
+                display: block;
+                width: 65px;
+                height: 1px;
+                background-color: $LightGrey;
+                margin-bottom: 70px;
+            @media screen and (min-width: $media-tablet){
+                margin-bottom: 50px;
+            }
+            @media screen and (min-width: $media-desktop){
+                margin-bottom: 58px;
+            }
+        }
+
+        & .title{
+            width: 55%;
+            margin-bottom: 26px;
+            @media screen and (min-width: $media-tablet){
+                margin-bottom: 64px;
+            }
+            @media screen and (min-width: $media-desktop){
+                margin-bottom: 58px;
+            }
+        }
+
+        & .text{
+            margin-bottom: 32px;
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__img-wrap{
+        display: none;
+        @media screen and (min-width: $media-desktop){
+            display: block;
+            flex-shrink: 0;
+            margin-left: 124px;
+        }
+    }
+}

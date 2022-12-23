@@ -27,36 +27,36 @@ const Leaders = () => {
 
   return (
     <section className="leaders">
-      <h2>The Leaders</h2>
+      <h2 className="leaders__title">The Leaders</h2>
       <div className="leaders__wrap">
         <div className="leaders__item">
           <GatsbyImage image={getImage(data.jake)} alt="jake" />
-          <div>
-            <p>Jake Richards</p>
+          <div className="leaders__text-wrap">
+            <p className="leaders__item-title">Jake Richards</p>
             <p>Chief Architect</p>
           </div>
         </div>
 
         <div className="leaders__item">
           <GatsbyImage image={getImage(data.thompson)} alt="thompson" />
-          <div>
-            <p>Thompson Smith</p>
+          <div className="leaders__text-wrap">
+            <p className="leaders__item-title">Thompson Smith</p>
             <p>Head of Finance</p>
           </div>
         </div>
 
         <div className="leaders__item">
           <GatsbyImage image={getImage(data.jackson)} alt="jackson" />
-          <div>
-            <p>Jackson Rourke</p>
+          <div className="leaders__text-wrap">
+            <p className="leaders__item-title">Jackson Rourke</p>
             <p>Lead Designer</p>
           </div>
         </div>
 
         <div className="leaders__item">
           <GatsbyImage image={getImage(data.maria)} alt="maria" />
-          <div>
-            <p>Maria Simpson</p>
+          <div className="leaders__text-wrap">
+            <p className="leaders__item-title">Maria Simpson</p>
             <p>Senior Architect</p>
           </div>
         </div>

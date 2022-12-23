@@ -1,1 +1,50 @@
 @import '../../assets/styles/variables' ;
+
+.leaders{
+
+    @media screen and (min-width: $media-desktop){
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title{
+        width: 55%;
+        margin-bottom: 26px;
+        @media screen and (min-width: $media-tablet){
+            margin-bottom: 64px;
+        }
+        @media screen and (min-width: $media-desktop){
+            width: 24%;
+        }
+    }
+
+    &__wrap{
+        display: grid;
+        row-gap: 80px;
+        @media screen and (min-width: $media-tablet){
+            grid-template-columns: 1fr 1fr;
+            row-gap: 102px;
+            column-gap: 12px;
+        }
+        @media screen and (min-width: $media-desktop){
+            column-gap: 30px;
+            row-gap: 62px;
+        }
+    }
+
+    &__item{
+
+        &-title{
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 40px;
+            color: $VeryDarkBlue;
+        }
+    }
+
+    &__text-wrap{
+        margin-top: 16px;
+    }
+
+
+}

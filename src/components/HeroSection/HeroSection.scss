@@ -1,1 +1,113 @@
 @import '../../assets/styles/variables' ;
+
+.hero{
+
+    width: 100vw;
+    margin-left: -32px;
+
+    @media screen and (min-width: $media-tablet){
+        width: 100%;
+        position: relative;
+        height: 720px;
+        margin-left: 0;
+    }
+
+    .gatsby-image-wrapper{
+        width: 100%;
+        @media screen and (min-width: $media-tablet){
+            height: 720px;
+        }
+        @media screen and (min-width: $media-desktop){
+            height: 720px;
+            width: 635px;
+        }
+    }
+
+    .shadow-title{
+        top: 205px;
+        right: 0;
+        z-index: 2;
+        @media screen and (min-width: $media-desktop){
+            top:135px;
+            right: 100px;
+        }
+    }
+
+    &__text-wrap{
+        position: relative;
+        width: 90%;
+        padding: 11px 0 0 32px;
+
+        @media screen and (min-width: $media-tablet){
+            position: absolute;
+            bottom: -1px;
+            right: -1px;
+            padding:  0 0 0 60px;
+            background-color: $White;
+        }
+        @media screen and (min-width: $media-desktop){
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            width: 730px;
+            height: 500px;
+            padding: 0;
+        }
+
+        &::before{
+            content: '';
+            position: absolute;
+            display: block;
+            top: -45px;
+            left: 0;
+            width: 100%;
+            height: 45px;
+            background-color: $White;
+
+            @media screen and (min-width: $media-tablet){
+                height: 88px;
+                top: -87px;
+            }
+            @media screen and (min-width: $media-desktop){
+                display: none;
+            }
+        }
+
+        & .title{
+            &::before{
+                display: none;
+        
+                @media screen and (min-width: $media-tablet){
+                    content: '';
+                    display: block;
+                    width: 65px;
+                    height: 1px;
+                    background-color: $LightGrey;
+                    margin-bottom: 70px;
+                }
+                @media screen and (min-width: $media-desktop){
+                    margin-bottom: 60px;
+                }
+            }
+        }
+
+        & .text{
+            margin-top: 20px;
+            @media screen and (min-width: $media-tablet){
+                margin-top: 38px;
+            }
+            @media screen and (min-width: $media-desktop){
+                margin-top: 49px;
+            }
+        }
+
+        & .title,
+        & .text{
+            @media screen and (min-width: $media-desktop){
+                width: 67%;
+            } 
+        }
+
+    }
+}

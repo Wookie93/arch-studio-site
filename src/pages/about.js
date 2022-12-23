@@ -6,7 +6,7 @@ import Heritage from '../components/Heritage/Heritage';
 
 const AboutPage = () => {
   return (
-    <>
+    <main>
       <HeroSection
         shadowTitle="About"
         title="Your team of professionals"
@@ -22,7 +22,7 @@ const AboutPage = () => {
       </HeroSection>
       <Heritage />
       <Leaders />
-    </>
+    </main>
   );
 };
 

@@ -2,7 +2,7 @@ import * as React from 'react';
 
 const ContactPage = () => {
   return (
-    <>
+    <main>
       <section>
         <div>IMG</div>
         <p className="shadow-title">Contact</p>
@@ -54,7 +54,7 @@ const ContactPage = () => {
           <button type="submit"></button>
         </form>
       </section>
-    </>
+    </main>
   );
 };
 
