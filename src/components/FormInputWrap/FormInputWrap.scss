@@ -1,0 +1,63 @@
+@import '../../assets/styles/variables' ;
+
+.input-wrap{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+
+    &:last-of-type{
+        margin-bottom: 0px;
+    }
+
+    &.empty-validated{
+        .label,
+        .input{
+            color: $Red;
+            border-color: $Red;
+            opacity: .5;
+        }
+    }
+
+    .label{
+        font-size: 20px;
+        line-height: 22px;
+        font-weight: 700;
+        color: $LightGrey;
+        margin-left: 36px;
+        order: 0;
+        opacity: 1;
+        transform: opacity 0.5s linear;
+
+        &.hide{
+            opacity: 0;
+            pointer-events: none;
+        }
+    }
+    .input{
+        height: 42px;
+        padding-left: 36px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 42px;
+        border: none;
+        border-bottom: 1px solid $VeryDarkBlue;
+        order: 1;
+
+        &:focus-visible + .label{
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        &.filled{
+            border-bottom: 3px solid $VeryDarkBlue; 
+        }
+    }
+    .error-msg{
+        position: absolute;
+        right: 0;
+        color: $Red;
+        font-weight: 700;
+        line-height: 17px;
+    }
+}

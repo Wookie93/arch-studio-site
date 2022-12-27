@@ -2,8 +2,9 @@
 
 
 .btn{
+    height: 72px;
     margin-top: 24px;
-    padding: 25px 33px;
+    padding: 0 33px;
     background: $VeryDarkBlue;
     color: $White;
     border: none;
@@ -12,6 +13,11 @@
     transition: background .3s linear;
     cursor: pointer;
     z-index: 2;
+
+    &.empty{
+        height: unset;
+        padding: 25px;
+    }
 
     &:hover{
         background: $DarkGrey;  
@@ -22,7 +28,16 @@
     }
 
     &__text{
+        display: inline-block;
+        height: inherit;
         margin-right: 24px;
+        color: $White;
+        a{
+            display: inline-block;
+            color: inherit;
+            height: inherit;
+            line-height: 72px;
+        }
     }
 
     &__arrowIco{

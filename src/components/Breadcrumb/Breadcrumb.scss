@@ -1,0 +1,50 @@
+@import '../../assets/styles/variables' ;
+
+.breadcrumb{
+    display: none;
+
+    @media screen and (min-width: 660px){
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 1.5vw;
+        letter-spacing: 18px;
+        text-orientation: upright;
+        writing-mode: vertical-rl;
+        color: $LightGrey;
+    
+        &::before{
+            content: '';
+            display: inline-block;
+            width: 1px;
+            height: 104px;
+            margin-bottom: 48px;
+            vertical-align: middle;
+            background-color: $LightGrey;
+        }
+    }
+    @media screen and (min-width: 700px){
+        left: 3vw;
+    }
+    @media screen and (min-width: 800px){
+        left: 7vw;
+    }
+    @media screen and (min-width: 900px){
+        left: 7vw;
+    }
+    @media screen and (min-width: 1024px){
+        left: 3vw;
+    }
+    @media screen and (min-width: 1200px){
+        left: 1vw;
+    }
+    @media screen and (min-width: 1300px){
+        left: 4vw;
+    }
+    @media screen and (min-width: 1500px){
+        left: 10vw;
+    }
+    @media screen and (min-width: 1919px){
+        left: 18vw;
+    }
+} 

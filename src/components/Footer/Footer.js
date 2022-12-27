@@ -1,3 +1,4 @@
+import { Link } from 'gatsby';
 import * as React from 'react';
 import Button from '../Button/Button';
 import Logo from '../Logo/Logo';
@@ -9,11 +10,19 @@ const Footer = () => (
       <Logo inBox={true} />
       <div className="footer__linkswrap">
         <ul className="footer__links">
-          <li>Portfolio</li>
-          <li>About Us</li>
-          <li>Contact</li>
+          <li>
+            <Link to="/portfolio">Portfolio</Link>
+          </li>
+          <li>
+            <Link to="/about">About Us</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
         </ul>
-        <Button>See Our Portfolio</Button>
+        <Button>
+          <Link to="/portfolio">See Our Portfolio</Link>
+        </Button>
       </div>
     </div>
   </footer>

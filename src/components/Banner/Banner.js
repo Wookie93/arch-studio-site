@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { GatsbyImage, getImage, withArtDirection } from 'gatsby-plugin-image';
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 import './Banner.scss';
 import Button from '../Button/Button';
 
@@ -52,7 +52,9 @@ const Banner = () => {
       <div className="grid-for-bcg">
         <div>
           <h2>Small team, big ideas</h2>
-          <Button>About us</Button>
+          <Button>
+            <Link to="/about">About us</Link>
+          </Button>
         </div>
       </div>
     </section>

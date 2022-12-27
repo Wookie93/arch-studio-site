@@ -82,11 +82,14 @@
 
     &__inner-text-wrap{
         align-self: end;
-    justify-self: left;
-    margin: 0 0 24px 24px;
-    @media screen and (min-width: $media-tablet){
-        margin: 0 0 40px 40px;  
-    }
+        justify-self: left;
+        margin: 0 0 24px 24px;
+        @media screen and (min-width: $media-tablet){
+            margin: 0 0 40px 40px;  
+        }
+        a{
+            color: $White;
+        }
     }
 
     &__counter{

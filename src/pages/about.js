@@ -1,10 +1,11 @@
 import * as React from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
+import { graphql } from 'gatsby';
+
 import HeroSection from '../components/HeroSection/HeroSection';
 import Leaders from '../components/Leaders/Leaders';
 import Heritage from '../components/Heritage/Heritage';
 
-const AboutPage = () => {
+const AboutPage = ({ data }) => {
   return (
     <main>
       <HeroSection
@@ -14,16 +15,23 @@ const AboutPage = () => {
             step of the way. Strong relationships are at the core of everything
             we do. This extends to the relationship our projects have with their
             surroundings."
-      >
-        <StaticImage
-          src="../assets/images/about/mobile/image-hero.jpg"
-          alt="hero image"
-        />
-      </HeroSection>
+        img={data.allCloudinaryMedia.nodes}
+      />
+
       <Heritage />
       <Leaders />
     </main>
   );
 };
+
+export const query = graphql`
+  query {
+    allCloudinaryMedia(filter: { folder: { eq: "hero/about" } }) {
+      nodes {
+        gatsbyImageData
+      }
+    }
+  }
+`;
 
 export default AboutPage;

@@ -13,6 +13,10 @@ html{
     padding: 0;
 }
 
+body{
+    position: relative;
+}
+
 main{
     padding: 0 32px;
     @media screen and (min-width: $media-tablet){
@@ -71,7 +75,8 @@ p,
 a,
 span
 ul,
-li{
+li,
+button{
     font-size: 1rem;
     color: $DarkGrey;
 }

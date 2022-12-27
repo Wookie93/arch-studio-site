@@ -6,7 +6,6 @@ import './PortfolioCardList.scss';
 
 const PortfolioCardList = () => {
   const images = usePortfolioImages();
-  console.log(portfolioData);
 
   return (
     <div className="card-list">

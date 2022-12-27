@@ -20,7 +20,5 @@ export const useSliderImages = () => {
     {}
   );
 
-  console.log(imagesObj);
-
   return imagesObj;
 };

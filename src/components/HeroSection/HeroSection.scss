@@ -12,6 +12,10 @@
         margin-left: 0;
     }
 
+    @media screen and (min-width: $media-desktop) and (max-width: 1200px){
+        padding: 0 64px;
+    }
+
     .gatsby-image-wrapper{
         width: 100%;
         @media screen and (min-width: $media-tablet){

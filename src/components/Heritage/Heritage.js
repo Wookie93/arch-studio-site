@@ -25,8 +25,8 @@ const Heritage = () => {
       </div>
       <div className="heritage__img-wrap">
         <StaticImage
-          src="../../assets/images/about/desktop/image-heritage.jpg"
-          alt="heriatege-image"
+          src="../../assets/images/about/image-heritage.jpg"
+          alt="heritageimage"
         />
       </div>
     </section>

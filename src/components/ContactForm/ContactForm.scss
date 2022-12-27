@@ -1,0 +1,30 @@
+@import '../../assets/styles/variables' ;
+
+
+.form-wrap{
+    @media screen and (min-width: $media-desktop){
+        display: flex;
+    }
+
+    &__title{
+        @media screen and (min-width: $media-desktop){
+            width: 30%;
+            margin-right: 135px;
+        }
+    }
+}
+.form{
+
+    margin-top: 40px;
+
+    @media screen and (min-width: $media-desktop){
+        flex-grow: 1;
+        margin-top: 0;
+    }
+
+    .btn.empty{
+        position: relative;
+        left: calc(100% - 74px);
+        margin-top: 0;
+    }
+}

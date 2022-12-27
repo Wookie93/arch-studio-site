@@ -4,6 +4,7 @@ import { GatsbyImage, getImage, withArtDirection } from 'gatsby-plugin-image';
 import Slider from 'react-slick';
 import Button from '../Button/Button';
 import './Slider.scss';
+import { Link } from 'gatsby';
 
 const SliderComponent = () => {
   /// SLIDER IMAGES
@@ -80,7 +81,9 @@ const SliderComponent = () => {
               Project made for an art museum near Southwest London. Project
               Paramour is a statement of bold, modern architecture.
             </p>
-            <Button>See Our Portfolio</Button>
+            <Button>
+              <Link to="/portfolio">See Our Portfolio</Link>
+            </Button>
           </div>
           <GatsbyImage image={paramourImages} alt="image" />
         </div>
@@ -93,7 +96,9 @@ const SliderComponent = () => {
               station that would transport people through time. The result is a
               fresh and futuristic model inspired by space stations.
             </p>
-            <Button>See Our Portfolio</Button>
+            <Button>
+              <Link to="/portfolio">See Our Portfolio</Link>
+            </Button>
           </div>
           <GatsbyImage image={seraphImages} alt="image" />
         </div>
@@ -106,7 +111,9 @@ const SliderComponent = () => {
               We achieved this with a striking look of brutal minimalism with
               modern touches.
             </p>
-            <Button>See Our Portfolio</Button>
+            <Button>
+              <Link to="/portfolio">See Our Portfolio</Link>
+            </Button>
           </div>
           <GatsbyImage image={federalImages} alt="image" />
         </div>
@@ -120,7 +127,9 @@ const SliderComponent = () => {
               frequency. For this project we used curves to blend design and
               stability to meet our objectives.
             </p>
-            <Button>See Our Portfolio</Button>
+            <Button>
+              <Link to="/portfolio">See Our Portfolio</Link>
+            </Button>
           </div>
           <GatsbyImage image={trinityImages} alt="image" />
         </div>

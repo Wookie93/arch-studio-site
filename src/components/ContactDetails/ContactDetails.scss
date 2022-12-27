@@ -1,0 +1,80 @@
+@import '../../assets/styles/variables' ;
+
+
+.contact-details{
+
+    @media screen and (min-width: $media-desktop){
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title{
+        width: 55%;
+        margin-bottom: 26px;
+        @media screen and (min-width: $media-tablet){
+            margin-bottom: 50px;
+        }
+        @media screen and (min-width: $media-desktop){
+            width: 22%;
+        }
+        &::before{
+            content: '';
+            display: block;
+            width: 65px;
+            height: 1px;
+            background-color: $LightGrey;
+            margin-bottom: 70px;
+            @media screen and (min-width: $media-tablet){
+                margin-bottom: 50px;
+            }
+            @media screen and (min-width: $media-desktop){
+                margin-bottom: 60px;
+            }
+        }
+    }
+
+    &__wrap{
+        display: grid;
+        row-gap: 40px;
+        @media screen and (min-width: $media-desktop){
+            grid-template-columns: 1fr 1fr;
+            column-gap: 96px;
+        }
+    }
+
+    &__detail{
+
+        @media screen and (min-width: $media-tablet){
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+        @media screen and (min-width: $media-desktop){
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-end;
+        }
+
+        .bold{
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .map-btn{
+            margin-top: 44px;
+            font-weight: 700;
+            background: none;
+            border: none;
+            color: $VeryDarkBlue;
+
+            &::after{
+                content: '';
+                display: inline-block;
+                background: url('../../assets/images/icons/icon-arrow.svg') no-repeat center;
+                width: 25px;
+                height: 10px;
+                margin-left: 24px;
+            }
+        }
+    }
+}

@@ -9,12 +9,24 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: `Arch Studio Site`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `http://localhost:8000`,
   },
   plugins: [
     'gatsby-plugin-sass',
     'gatsby-plugin-image',
     'gatsby-plugin-sitemap',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    'node-sass',
+    {
+      resolve: 'gatsby-plugin-sharp',
+      options: {
+        defaults: {
+          formats: [`auto`, `webp`, `png`, `jpg`],
+          placeholder: `dominantColor`,
+        },
+      },
+    },
     {
       resolve: `gatsby-source-cloudinary`,
       options: {
@@ -37,8 +49,7 @@ module.exports = {
         icon: 'src/images/icon.png',
       },
     },
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
+
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -55,6 +66,5 @@ module.exports = {
         },
       },
     },
-    'node-sass',
   ],
 };

@@ -1,18 +1,12 @@
 import * as React from 'react';
-import {
-  GatsbyImage,
-  StaticImage,
-  getImage,
-  withArtDirection,
-} from 'gatsby-plugin-image';
+import { GatsbyImage, getImage, withArtDirection } from 'gatsby-plugin-image';
 import './Featured.scss';
 import Button from '../Button/Button';
 import { useFeaturedImages } from '../../hooks/useFeaturedImages';
+import { Link } from 'gatsby';
 
 const Featured = () => {
   const images = useFeaturedImages();
-
-  console.log(images);
 
   const delSolImages = withArtDirection(getImage(images.delSol), [
     {
@@ -55,7 +49,7 @@ const Featured = () => {
             <span className="featured__counter">1</span>
             <div className="featured__inner-text-wrap">
               <h3>Project Del Sol</h3>
-              <p>View All Projects</p>
+              <Link to="/portfolio">View All Projects</Link>
             </div>
           </div>
         </div>
@@ -66,7 +60,7 @@ const Featured = () => {
             <span className="featured__counter">2</span>
             <div className="featured__inner-text-wrap">
               <h3>228B Tower</h3>
-              <p>View All Projects</p>
+              <Link to="/portfolio">View All Projects</Link>
             </div>
           </div>
         </div>
@@ -81,12 +75,14 @@ const Featured = () => {
             <span className="featured__counter">3</span>
             <div className="featured__inner-text-wrap">
               <h3>Le Prototype</h3>
-              <p>View All Projects</p>
+              <Link to="/portfolio">View All Projects</Link>
             </div>
           </div>
         </div>
       </div>
-      <Button>See all</Button>
+      <Button>
+        <Link to="/portfolio">See all</Link>
+      </Button>
     </section>
   );
 };
