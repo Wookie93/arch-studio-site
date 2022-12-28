@@ -4,6 +4,8 @@ import { graphql } from 'gatsby';
 import HeroSection from '../components/HeroSection/HeroSection';
 import ContactDetail from '../components/ContactDetails/ContactDetails';
 import ContactForm from '../components/ContactForm/ContactForm';
+import Map from '../components/Map/Map';
+import { SEO } from '../components/SEO/seo.js';
 
 const ContactPage = ({ data }) => {
   return (
@@ -18,8 +20,7 @@ const ContactPage = ({ data }) => {
       />
 
       <ContactDetail />
-
-      <section className="map"></section>
+      <Map />
       <ContactForm />
     </main>
   );
@@ -36,3 +37,4 @@ export const query = graphql`
 `;
 
 export default ContactPage;
+export const Head = () => <SEO title="Contact Page" />;

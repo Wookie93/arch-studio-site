@@ -9,6 +9,8 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: `Arch Studio Site`,
+    description: ``,
+    image: `/favicon-32x32.png`,
     siteUrl: `http://localhost:8000`,
   },
   plugins: [
@@ -22,7 +24,6 @@ module.exports = {
       resolve: 'gatsby-plugin-sharp',
       options: {
         defaults: {
-          formats: [`auto`, `webp`, `png`, `jpg`],
           placeholder: `dominantColor`,
         },
       },
@@ -46,7 +47,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: 'src/images/icon.png',
+        icon: 'src/assets/images/favicon-32x32.png',
       },
     },
 
@@ -64,6 +65,12 @@ module.exports = {
         google: {
           families: ['League Spartan:400,700'],
         },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-react-leaflet',
+      options: {
+        linkStyles: true, // (default: true) Enable/disable loading stylesheets via CDN
       },
     },
   ],

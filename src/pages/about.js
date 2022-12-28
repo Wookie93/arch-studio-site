@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 import HeroSection from '../components/HeroSection/HeroSection';
 import Leaders from '../components/Leaders/Leaders';
 import Heritage from '../components/Heritage/Heritage';
+import { SEO } from '../components/SEO/seo.js';
 
 const AboutPage = ({ data }) => {
   return (
@@ -35,3 +36,4 @@ export const query = graphql`
 `;
 
 export default AboutPage;
+export const Head = () => <SEO title="About Page" />;
