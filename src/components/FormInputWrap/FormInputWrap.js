@@ -22,8 +22,14 @@ const InputWrap = ({ labelName, type, name, validate, value }) => {
 
   return (
     <div className="input-wrap" data-for={name} onBlur={setStyleOnBlur}>
-      <Field className="input" type={type} name={name} validate={validate} />
-      <label className="label" htmlFor={name}>
+      <Field
+        className="input"
+        type={type}
+        id={name + '_1'}
+        name={name}
+        validate={validate}
+      />
+      <label className="label" htmlFor={name + '_1'}>
         {labelName}
       </label>
       <ErrorMessage className="error-msg" name={name} component="div" />

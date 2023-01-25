@@ -9,7 +9,7 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: `Arch Studio Site`,
-    description: ``,
+    description: `Page for design studio`,
     image: `/favicon-32x32.png`,
     siteUrl: `http://localhost:8000`,
   },
