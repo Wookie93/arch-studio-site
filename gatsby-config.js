@@ -14,6 +14,7 @@ module.exports = {
     siteUrl: `http://localhost:8000`,
   },
   plugins: [
+    `gatsby-plugin-netlify`,
     'gatsby-plugin-sass',
     'gatsby-plugin-image',
     'gatsby-plugin-sitemap',
