@@ -18,5 +18,5 @@ The webiste have:
   - React Leafleat for map
   - Formik for contact form
 
-Here is demo: 
+Here is demo:  https://dynamic-bonbon-592986.netlify.app
 
